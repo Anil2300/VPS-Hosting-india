@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VPS Hosting India | NVMe SSD KVM VPS with 24x7 Support - YouStable</title>
+<meta name="description" content="Indian VPS hosting with NVMe SSD storage, KVM virtualization, full root access and free migration. Local data centers, UPI billing and GST invoices. Deploy in minutes.">
+<link rel="canonical" href="https://www.youstable.com/vps-hosting/india/">
+<meta property="og:title" content="VPS Hosting India - NVMe SSD KVM VPS by YouStable">
+<meta property="og:description" content="Fast, secure VPS hosting built for Indian websites and businesses. Full root access, free migration, 24x7 support.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is VPS hosting and why choose it in India?","acceptedAnswer":{"@type":"Answer","text":"A VPS (Virtual Private Server) gives your site its own dedicated CPU, RAM and storage on a virtualized server, instead of sharing resources with hundreds of other accounts. Choosing an Indian VPS keeps your server physically closer to Indian visitors, cutting latency and improving load times and SEO."}},
+{"@type":"Question","name":"Do I get full root access with YouStable VPS hosting?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every KVM VPS plan ships with full root access, so you can install your own OS, control panel and software stack exactly as you need it."}},
+{"@type":"Question","name":"Can I switch from shared hosting to VPS without downtime?","acceptedAnswer":{"@type":"Answer","text":"Yes, YouStable's team handles free migration of your files, databases and CMS setup from your current host to your new VPS, with minimal to zero downtime."}},
+{"@type":"Question","name":"Does YouStable support UPI payments and GST invoices for VPS hosting?","acceptedAnswer":{"@type":"Answer","text":"Yes. Indian customers can pay via UPI and other local methods, and every invoice is GST-compliant for business accounting."}}
+]}
+</script>
+<style>
+:root{
+  --bg:#0A0F1C; --surface:#121A2B; --surface-alt:#17233A; --border:#223049;
+  --text:#EAF0F7; --muted:#90A0B7; --teal:#1FD1A6; --amber:#F5A524;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; line-height:1.6; overflow-x:hidden;}
+h1,h2,h3{font-family:'Sora',sans-serif; font-weight:700; line-height:1.2;}
+.mono{font-family:'JetBrains Mono',monospace;}
+a{color:inherit; text-decoration:none;}
+.wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+.btn{display:inline-block; padding:13px 26px; border-radius:8px; font-weight:600; font-size:15px; transition:transform .15s ease;}
+.btn:hover{transform:translateY(-2px);}
+.btn-primary{background:var(--teal); color:#04231C;}
+.btn-ghost{border:1px solid var(--border); color:var(--text);}
+
+header{position:sticky; top:0; z-index:50; background:rgba(10,15,28,.9); backdrop-filter:blur(8px); border-bottom:1px solid var(--border);}
+header .wrap{display:flex; align-items:center; justify-content:space-between; height:72px;}
+.logo img{height:34px; display:block;}
+nav ul{display:flex; gap:28px; list-style:none;}
+nav a{color:var(--muted); font-size:15px;}
+nav a:hover{color:var(--text);}
+.nav-cta{display:flex; align-items:center; gap:16px;}
+.mobile-nav-toggle{display:none;}
+
+.hero{padding:88px 0 64px; position:relative;}
+.hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center;}
+.eyebrow{color:var(--teal); font-size:14px; font-weight:600; margin-bottom:16px;}
+.hero h1{font-size:44px; letter-spacing:-0.5px; margin-bottom:20px;}
+.hero p.lead{color:var(--muted); font-size:17px; max-width:460px; margin-bottom:28px;}
+.hero-cta{display:flex; gap:14px; margin-bottom:28px;}
+.hero-trust{display:flex; gap:24px; color:var(--muted); font-size:13px;}
+.hero-trust b{color:var(--text); font-family:'Sora',sans-serif; display:block; font-size:20px;}
+
+.term{background:var(--surface); border:1px solid var(--border); border-radius:12px; overflow:hidden;}
+.term-head{display:flex; gap:6px; padding:12px 16px; border-bottom:1px solid var(--border);}
+.term-dot{width:10px; height:10px; border-radius:50%; background:var(--border);}
+.term-body{padding:22px; font-size:13.5px;}
+.term-row{display:flex; justify-content:space-between; padding:9px 0; border-bottom:1px dashed var(--border);}
+.term-row:last-child{border:none;}
+.term-row .k{color:var(--muted);}
+.term-row .v{color:var(--teal);}
+.term-row .v.amber{color:var(--amber);}
+
+.strip{border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:22px 0; background:var(--surface);}
+.strip .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; color:var(--muted); font-size:14px;}
+.strip b{color:var(--text);}
+
+section{padding:80px 0;}
+.section-head{max-width:620px; margin-bottom:44px;}
+.section-head .eyebrow{margin-bottom:12px;}
+.section-head h2{font-size:32px; margin-bottom:14px;}
+.section-head p{color:var(--muted); font-size:16px;}
+
+.why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:14px; overflow:hidden;}
+.why-card{background:var(--surface); padding:30px 26px;}
+.why-card .num{font-family:'JetBrains Mono',monospace; color:var(--teal); font-size:13px; margin-bottom:14px;}
+.why-card h3{font-size:17px; margin-bottom:10px;}
+.why-card p{color:var(--muted); font-size:14.5px;}
+
+.plans{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+.plan{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:32px 28px; display:flex; flex-direction:column;}
+.plan.featured{border-color:var(--teal); background:linear-gradient(180deg,var(--surface-alt),var(--surface));}
+.plan-tag{font-size:12px; color:var(--teal); font-weight:600; margin-bottom:10px;}
+.plan h3{font-size:20px; margin-bottom:6px;}
+.plan .price{font-family:'Sora',sans-serif; font-size:30px; font-weight:800; margin:14px 0 4px;}
+.plan .price span{font-size:14px; color:var(--muted); font-weight:500;}
+.plan .price-note{font-size:12px; color:var(--muted); margin-bottom:20px;}
+.plan ul{list-style:none; margin-bottom:26px; flex:1;}
+.plan li{font-size:14.5px; color:var(--muted); padding:8px 0; border-top:1px solid var(--border); display:flex; gap:10px;}
+.plan li:first-child{border:none;}
+.plan li::before{content:"—"; color:var(--teal);}
+
+.feat-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
+.feat{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:24px 22px;}
+.feat .ic{width:36px; height:36px; border-radius:8px; background:var(--surface-alt); display:flex; align-items:center; justify-content:center; color:var(--amber); font-family:'JetBrains Mono',monospace; font-size:15px; margin-bottom:16px;}
+.feat h3{font-size:15.5px; margin-bottom:8px;}
+.feat p{color:var(--muted); font-size:13.5px;}
+
+table{width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border); border-radius:12px; overflow:hidden;}
+th,td{padding:16px 18px; text-align:left; font-size:14.5px; border-bottom:1px solid var(--border);}
+th{color:var(--muted); font-weight:600; font-size:13px; text-transform:none; background:var(--surface-alt);}
+td.hl{color:var(--teal); font-weight:600;}
+tr:last-child td{border:none;}
+
+.faq-item{border-bottom:1px solid var(--border); padding:22px 0;}
+.faq-q{display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-family:'Sora',sans-serif; font-weight:600; font-size:16.5px;}
+.faq-q .plus{color:var(--teal); font-family:'JetBrains Mono',monospace; transition:transform .2s;}
+.faq-item.open .plus{transform:rotate(45deg);}
+.faq-a{max-height:0; overflow:hidden; color:var(--muted); font-size:14.5px; transition:max-height .25s ease;}
+.faq-item.open .faq-a{max-height:220px; padding-top:14px;}
+
+.cta-band{background:linear-gradient(120deg,var(--surface-alt),var(--surface)); border:1px solid var(--border); border-radius:20px; padding:56px; text-align:center; margin:0 24px;}
+.cta-band h2{font-size:28px; margin-bottom:14px;}
+.cta-band p{color:var(--muted); margin-bottom:26px;}
+
+footer{border-top:1px solid var(--border); padding:40px 0; color:var(--muted); font-size:13.5px;}
+footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px;}
+
+@media(max-width:860px){
+  nav,.hero-trust{display:none;}
+  .hero-grid{grid-template-columns:1fr;}
+  .hero h1{font-size:33px;}
+  .why-grid,.feat-grid{grid-template-columns:repeat(2,1fr);}
+  .plans{grid-template-columns:1fr;}
+  table{font-size:12.5px;}
+  th,td{padding:12px;}
+}
+
+#plans {
+  background: transparent;
+  padding: 80px 0;
+}
+#plans .wrap {
+  max-width: 1220px;
+}
+#plans .section-head {
+  max-width: 620px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+#plans .section-head .eyebrow {
+  margin-bottom: 12px;
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 600;
+}
+#plans .section-head h2 {
+  color: var(--text);
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+#plans .section-head p {
+  color: var(--muted);
+  font-size: 16px;
+}
+.plan-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+  margin: 0 auto 26px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(118, 92, 255, 0.12);
+  border: 1px solid rgba(118, 92, 255, 0.25);
+}
+.plan-toggle button {
+  border: none;
+  background: transparent;
+  color: #dfe6f5;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 999px;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.plan-toggle .active {
+  background: linear-gradient(135deg, #6d5de6, #8f7cf3);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(109, 93, 230, 0.22);
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+.pricing-card {
+  position: relative;
+  background: rgba(18, 26, 43, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 18px 20px 18px;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.02);
+  min-height: 640px;
+}
+.pricing-card.featured {
+  border: 2px solid #6d5de6;
+  background: linear-gradient(180deg, rgba(24, 31, 48, 0.98), rgba(16, 24, 39, 0.96));
+  box-shadow: 0 10px 20px rgba(109, 93, 230, 0.12);
+}
+.pricing-card .save-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  border: 1px solid #6d5de6;
+  color: #e9e4ff;
+  background: rgba(109, 93, 230, 0.12);
+}
+.pricing-card.featured .save-badge {
+  background: linear-gradient(135deg, #5c57dd, #7b69eb);
+  border-color: transparent;
+  color: #fff;
+}
+.pricing-card .plan-name {
+  margin: 28px 0 0;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--text);
+  font-weight: 700;
+}
+.pricing-card .plan-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+  min-height: 46px;
+  margin: 10px 0 16px;
+}
+.pricing-card .old-price {
+  color: #8a90a6;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #f06363;
+}
+.pricing-card .price-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.pricing-card .new-price {
+  font-size: 42px;
+  line-height: 1;
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+.pricing-card .new-price .unit {
+  font-size: 16px;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.pricing-card .renewal {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: left;
+}
+.pricing-card .cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  margin-top: 8px;
+  border: 1px solid #6d5de6;
+  background: transparent;
+  color: #dfe6ff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.pricing-card.featured .cta-btn {
+  background: linear-gradient(135deg, #5d5ce6, #7d6de9);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(93, 92, 230, 0.23);
+}
+.pricing-card .included {
+  margin-top: 28px;
+  padding-top: 10px;
+}
+.pricing-card .included h4 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  color: var(--text);
+  font-weight: 600;
+}
+.pricing-card .included ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pricing-card .included li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d5dbe7;
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 8px;
+}
+.pricing-card .included li::before {
+  content: "✓";
+  display: inline-block;
+  color: #8d7dff;
+  font-weight: 800;
+  font-size: 14px;
+}
+@media (max-width: 1100px) {
+  .pricing-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+}
+@media (max-width: 700px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-card { min-height: auto; }
+  #plans .section-head h2 { font-size: 30px; }
+  .plan-toggle { width: 100%; max-width: 300px; }
+  .plan-toggle button { flex: 1; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="https://www.youstable.com/"><img src="assets/youstable-logo.png" alt="YouStable - Get Set Host"></a>
+    <nav><ul>
+      <li><a href="#why">Why VPS India</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul></nav>
+    <div class="nav-cta"><a class="btn btn-primary" href="https://www.youstable.com/vps-hosting/india/">View Plans</a></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">VPS HOSTING · INDIA</div>
+      <h1>VPS hosting built for India, running on NVMe SSD and full root access</h1>
+      <p class="lead">Deploy a KVM VPS on Indian data centers with instant provisioning, free migration and 24x7 local support — priced for Indian businesses, billed in INR.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://www.youstable.com/vps-hosting/india/">See VPS plans</a>
+        <a class="btn btn-ghost" href="#why">Why choose Indian VPS</a>
+      </div>
+      <div class="hero-trust">
+        <div><b>2015</b>Hosting since</div>
+        <div><b>55,000+</b>Customers served</div>
+        <div><b>99.9%</b>Uptime SLA</div>
+      </div>
+    </div>
+    <div class="term">
+      <div class="term-head"><div class="term-dot"></div><div class="term-dot"></div><div class="term-dot"></div></div>
+      <div class="term-body mono">
+        <div class="term-row"><span class="k">provider</span><span class="v">youstable-vps-in</span></div>
+        <div class="term-row"><span class="k">virtualization</span><span class="v">KVM</span></div>
+        <div class="term-row"><span class="k">storage</span><span class="v">NVMe SSD</span></div>
+        <div class="term-row"><span class="k">root_access</span><span class="v">full</span></div>
+        <div class="term-row"><span class="k">location</span><span class="v">India</span></div>
+        <div class="term-row"><span class="k">billing</span><span class="v">INR / UPI</span></div>
+        <div class="term-row"><span class="k">status</span><span class="v amber">● provisioning...</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>Free</b> website & database migration</div>
+    <div><b>24x7</b> Hindi + English support</div>
+    <div><b>UPI</b> payments & GST invoices</div>
+    <div><b>Instant</b> provisioning</div>
+  </div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">WHY VPS HOSTING IN INDIA</div>
+      <h2>Shared hosting runs out of room. An Indian VPS gives it back.</h2>
+      <p>Growing traffic, checkout pages, or a custom stack all need resources a shared account can't guarantee. Hosting that VPS inside India adds a second win: shorter distance to your users.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="num">01</div><h3>Lower latency</h3><p>Indian data centers cut the physical distance packets travel to your visitors, which shows up directly in load time and Core Web Vitals.</p></div>
+      <div class="why-card"><div class="num">02</div><h3>Dedicated resources</h3><p>Your CPU, RAM and storage aren't shared with other accounts, so a traffic spike on another site never slows yours down.</p></div>
+      <div class="why-card"><div class="num">03</div><h3>INR billing, local support</h3><p>Pay by UPI, get GST invoices for your books, and reach support that works Indian business hours in Hindi or English.</p></div>
+      <div class="why-card"><div class="num">04</div><h3>Room to grow</h3><p>Upgrade vCPU, RAM or storage on the same server as traffic grows — no re-migration needed to move up a tier.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Plans</div>
+      <h2>VPS plans for every stage</h2>
+      <p>From a first side project to a production storefront — every plan ships with full root access and NVMe SSD.</p>
+    </div>
+
+    <div class="plan-toggle" aria-label="Billing cycle">
+      <button type="button" class="active">24 Month</button>
+      <button type="button">12 Month</button>
+      <button type="button">1 Month</button>
+    </div>
+
+    <div class="pricing-grid">
+      <article class="pricing-card">
+        <div class="save-badge">Save 65%</div>
+        <h3 class="plan-name">vStart</h3>
+        <p class="plan-description">Perfect for startups and entry VPS</p>
+
+        <div class="price-wrap">
+          <span class="old-price">₹1049/mo</span>
+          <span class="old-price">+2 months free</span>
+        </div>
+
+        <div class="price-wrap">
+          <span class="new-price">₹349<span class="unit">/mo</span></span>
+        </div>
+        <div class="renewal">Renewal at Same Price</div>
+        <a href="https://www.youstable.com/vps-hosting/india/" class="cta-btn">Get Started →</a>
+
+        <div class="included">
+          <h4>What's included</h4>
+          <ul>
+            <li>1 CPU</li>
+            <li>4 GB RAM</li>
+            <li>50 GB NVMe SSD</li>
+            <li>4 TB Bandwidth</li>
+            <li>1 Free Dedicated IPv4</li>
+            <li>Full Root Access</li>
+            <li>Free Control Panel*</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="pricing-card">
+        <div class="save-badge">Save 65%</div>
+        <h3 class="plan-name">vProfessional</h3>
+        <p class="plan-description">More power for web apps and e-stores.</p>
+
+        <div class="price-wrap">
+          <span class="old-price">₹1573/mo</span>
+          <span class="old-price">+2 months free</span>
+        </div>
+
+        <div class="price-wrap">
+          <span class="new-price">₹519<span class="unit">/mo</span></span>
+        </div>
+        <div class="renewal">Renewal at Same Price</div>
+        <a href="https://www.youstable.com/vps-hosting/india/" class="cta-btn">Get Started →</a>
+
+        <div class="included">
+          <h4>What's included</h4>
+          <ul>
+            <li>2 CPU</li>
+            <li>8 GB RAM</li>
+            <li>100 GB NVMe SSD</li>
+            <li>8 TB Bandwidth</li>
+            <li>1 Free Dedicated IPv4</li>
+            <li>Full Root Access</li>
+            <li>Free Control Panel*</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="pricing-card featured">
+        <div class="save-badge">Most Popular</div>
+        <h3 class="plan-name">vPopular</h3>
+        <p class="plan-description">Power and speed, perfectly balanced.</p>
+
+        <div class="price-wrap">
+          <span class="old-price">₹2623/mo</span>
+          <span class="old-price">+2 months free</span>
+        </div>
+
+        <div class="price-wrap">
+          <span class="new-price">₹749<span class="unit">/mo</span></span>
+        </div>
+        <div class="renewal">Renewal at Same Price</div>
+        <a href="https://www.youstable.com/vps-hosting/india/" class="cta-btn">Get Started →</a>
+
+        <div class="included">
+          <h4>What's included</h4>
+          <ul>
+            <li>4 CPU</li>
+            <li>16 GB RAM</li>
+            <li>200 GB NVMe SSD</li>
+            <li>16 TB Bandwidth</li>
+            <li>1 Free Dedicated IPv4</li>
+            <li>Full Root Access</li>
+            <li>Free Control Panel*</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="pricing-card">
+        <div class="save-badge">Save 70%</div>
+        <h3 class="plan-name">vStable</h3>
+        <p class="plan-description">High-grade power for heavy workloads.</p>
+
+        <div class="price-wrap">
+          <span class="old-price">₹5248/mo</span>
+          <span class="old-price">+2 months free</span>
+        </div>
+
+        <div class="price-wrap">
+          <span class="new-price">₹1499<span class="unit">/mo</span></span>
+        </div>
+        <div class="renewal">Renewal at Same Price</div>
+        <a href="https://www.youstable.com/vps-hosting/india/" class="cta-btn">Get Started →</a>
+
+        <div class="included">
+          <h4>What's included</h4>
+          <ul>
+            <li>8 CPU</li>
+            <li>32 GB RAM</li>
+            <li>400 GB NVMe SSD</li>
+            <li>32 TB Bandwidth</li>
+            <li>1 Free Dedicated IPv4</li>
+            <li>Full Root Access</li>
+            <li>Free Control Panel*</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">WHAT'S INCLUDED</div>
+      <h2>Everything you need to run your own server</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat"><div class="ic">KVM</div><h3>KVM virtualization</h3><p>True isolation with guaranteed resources, not oversold containers.</p></div>
+      <div class="feat"><div class="ic">SSD</div><h3>NVMe storage</h3><p>Faster disk I/O than standard SSD, cutting database and app response times.</p></div>
+      <div class="feat"><div class="ic">cP</div><h3>cPanel option</h3><p>Add a familiar control panel, or manage everything from the command line.</p></div>
+      <div class="feat"><div class="ic">IP</div><h3>Dedicated IP</h3><p>A static IP for your server, useful for SSL, whitelisting and mail delivery.</p></div>
+      <div class="feat"><div class="ic">↻</div><h3>Free migration</h3><p>The team moves your files, databases and CMS across at no extra cost.</p></div>
+      <div class="feat"><div class="ic">🛡</div><h3>Server security</h3><p>Firewall configuration and DDoS mitigation on every plan.</p></div>
+      <div class="feat"><div class="ic">⏱</div><h3>Instant deployment</h3><p>Spin up a new VPS in minutes, not hours.</p></div>
+      <div class="feat"><div class="ic">₹</div><h3>UPI & GST billing</h3><p>Local payment methods and compliant invoices for Indian businesses.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">COMPARISON</div>
+      <h2>VPS vs shared vs dedicated hosting</h2>
+    </div>
+    <table>
+      <tr><th></th><th>Shared Hosting</th><th>VPS Hosting India</th><th>Dedicated Server</th></tr>
+      <tr><td>Resources</td><td>Shared with other sites</td><td class="hl">Dedicated, guaranteed</td><td>Fully dedicated</td></tr>
+      <tr><td>Root access</td><td>No</td><td class="hl">Yes, full root</td><td>Yes, full root</td></tr>
+      <tr><td>Best for</td><td>Small blogs, first site</td><td class="hl">Growing sites, apps, stores</td><td>High-traffic enterprise</td></tr>
+      <tr><td>Cost</td><td>Lowest</td><td class="hl">Mid-range</td><td>Highest</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:760px;">
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>Common questions about VPS hosting in India</h2>
+    </div>
+    <div class="faq-item open">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>What is VPS hosting and why choose it in India?</span><span class="plus mono">+</span></div>
+      <div class="faq-a">A VPS gives your site its own dedicated CPU, RAM and storage, instead of sharing resources with hundreds of other accounts. Hosting that VPS in India keeps it physically closer to Indian visitors, cutting latency and improving load times.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Do I get full root access with YouStable VPS hosting?</span><span class="plus mono">+</span></div>
+      <div class="faq-a">Yes. Every KVM VPS plan ships with full root access, so you can install your own OS, control panel and software stack.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Can I switch from shared hosting to VPS without downtime?</span><span class="plus mono">+</span></div>
+      <div class="faq-a">Yes, the team handles free migration of your files, databases and CMS setup from your current host, with minimal to zero downtime.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Does YouStable support UPI payments and GST invoices?</span><span class="plus mono">+</span></div>
+      <div class="faq-a">Yes. Indian customers can pay via UPI and other local methods, and every invoice is GST-compliant.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cta-band">
+    <h2>Deploy your India VPS today</h2>
+    <p>Full root access, NVMe SSD and 24x7 support — live in minutes.</p>
+    <a class="btn btn-primary" href="https://www.youstable.com/vps-hosting/india/">Get started</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 YouStable Technologies Pvt Ltd. All rights reserved.</div>
+    <div>Lucknow, India · support@youstable.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
